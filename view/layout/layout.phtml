@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><?php echo $this->headTitle(); ?></title>
+    <?php echo $this->headLink(); ?>
+    <?php echo $this->headScript(); ?>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo $this->assetUrl('css/style.css', 'Omeka\Asset'); ?>">
+</head>
+<body>
+<header>
+    <?php echo $this->partial('common/header'); ?>
+</header>
+<main>
+    <?php echo $this->content(); ?>
+</main>
+<footer>
+    <?php echo $this->partial('common/footer'); ?>
+</footer>
+<script src="<?php echo $this->assetUrl('js/script.js', 'Omeka\Asset'); ?>"></script>
+</body>
+</html>
